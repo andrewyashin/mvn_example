@@ -128,6 +128,10 @@ class Circle2 extends Circle{
 class Romboid extends Shape{
     void draw(){
         System.out.println("Romboid");
+
+        class Hi{
+
+        }
     }
 }
 class Triangle extends Shape{}
