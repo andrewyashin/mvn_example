@@ -21,6 +21,16 @@ public class StringGenerator {
         return collection;
     }
 
+    public static Collection<String> getRandomCollection(int size){
+        Random random = new Random();
+        ArrayList<String> list = new ArrayList<String>(size);
+        for (int i = 0 ; i < size; i ++){
+            list.add(names[random.nextInt(names.length)]);
+        }
+
+        return list;
+    }
+
     public static void main(String... args){
         StringGenerator stringGenerator = new StringGenerator(10);
         print(stringGenerator.getRandomCollection(new ArrayList<String>()));
