@@ -37,6 +37,8 @@ public class AtomicTest implements Runnable{
             executorService.execute(thread);
         }
         executorService.shutdown();
+
+
     }
 }
 
