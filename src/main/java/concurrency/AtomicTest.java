@@ -66,3 +66,18 @@ class InterruptThread implements Runnable{
     }
 }
 
+enum WeekDays{
+    MONDAY{
+        @Override
+        public String toString() {
+            return "It's monday";
+        }
+    }, TUESDAY, WEDNESDAY, THURSDAY, FRIDAY, SATURDAY, SUNDAY
+}
+
+class TestEnums{
+    public static void main(String[] args) {
+        System.out.println(WeekDays.MONDAY);
+    }
+}
+

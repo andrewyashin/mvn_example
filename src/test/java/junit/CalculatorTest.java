@@ -1,5 +1,6 @@
 package junit;
 
+import org.junit.Assert;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
@@ -12,7 +13,7 @@ public class CalculatorTest {
     public void division() throws Exception {
         Calculator calculator = new Calculator();
         int result = calculator.division(1,1);
-        assertEquals(1, result);
+        Assert.assertEquals(1, result);
     }
 
 }
